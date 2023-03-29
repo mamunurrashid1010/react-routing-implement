@@ -1,6 +1,8 @@
 import React from 'react';
+import {useNavigate} from "react-router-dom";
 
 const Contact = () => {
+    const navigate = useNavigate();
     return (
         <div>
             <h1>Contact Page</h1>
@@ -12,6 +14,7 @@ const Contact = () => {
                 remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
                 and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
             </p>
+            <button onClick={()=>navigate('/')}>Back to home</button>
         </div>
     );
 };
