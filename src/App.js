@@ -6,11 +6,13 @@ import Blog from "./pages/Blog";
 import Service from "./pages/Service";
 import Contact from "./pages/Contact";
 import Error from "./pages/Error";
+import Navbar from "./navbar/Navbar";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
+          <Navbar/>
           <Routes>
               <Route path="/" element={<Home/>} />
               <Route path="/blog" element={<Blog/>} />
