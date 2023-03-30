@@ -7,6 +7,7 @@ import Service from "./pages/Service";
 import Contact from "./pages/Contact";
 import Error from "./pages/Error";
 import Navbar from "./navbar/Navbar";
+import ServiceDetails from "./pages/ServiceDetails";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
               <Route path="/" element={<Home/>} />
               <Route path="/blog" element={<Blog/>} />
               <Route path="/service" element={<Service/>} />
+              <Route path="/service/:title" element={<ServiceDetails/>} />
               <Route path="/contact" element={<Contact/>} />
               <Route path="*" element={<Error/>} />
           </Routes>
