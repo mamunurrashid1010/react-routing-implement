@@ -8,6 +8,7 @@ import Contact from "./pages/Contact";
 import Error from "./pages/Error";
 import Navbar from "./navbar/Navbar";
 import ServiceDetails from "./pages/ServiceDetails";
+import BlogDetails from "./pages/BlogDetails";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Routes>
               <Route path="/" element={<Home/>} />
               <Route path="/blog" element={<Blog/>} />
+              <Route path="/blog/:blogId" element={<BlogDetails/>} />
               <Route path="/service" element={<Service/>} />
               <Route path="/service/:title" element={<ServiceDetails/>} />
               <Route path="/contact" element={<Contact/>} />
